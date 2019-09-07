@@ -33,27 +33,20 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.springframework.boot</groupId>
-						<artifactId>spring-boot-maven-plugin</artifactId>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<version>3.1.2</version>
 						<configuration>
-							<fork>true</fork>
-							<mainClass>org.auzmor.web.WebApp</mainClass>
 							<outputDirectory>${outputDirectory}</outputDirectory>
+							<archive>
+								<manifest>
+									<addClasspath>true</addClasspath>
+									<classpathPrefix>lib/</classpathPrefix>
+									<mainClass>org.auzmor.web.WebApp</mainClass>
+								</manifest>
+							</archive>
 						</configuration>
-						<executions>
-							<execution>
-								<goals>
-									<goal>repackage</goal>
-								</goals>
-							</execution>
-						</executions>
 					</plugin>
-					<!-- <plugin> <artifactId>maven-assembly-plugin</artifactId> <version>3.1.1</version> 
-						<executions> <execution> <phase>package</phase> <goals> <goal>single</goal> 
-						</goals> </execution> </executions> <configuration> <archive> <manifest> 
-						<mainClass>org.auzmor.web.WebApp</mainClass> </manifest> </archive> <outputDirectory>${outputDirectory}</outputDirectory> 
-						<descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> </descriptorRefs> 
-						</configuration> </plugin> -->
 				</plugins>
 			</build>
 		</profile>

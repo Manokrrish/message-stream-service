@@ -1,0 +1,8 @@
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/controller/UserController.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/WebApp.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/serializer/UserProtoSerializer.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/common/KafkaProps.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/vo/User.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/proto/UserProto.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/config/QueueConfig.java
+/Users/mankri/git/message-stream-service/src/main/java/org/auzmor/web/service/QueueService.java

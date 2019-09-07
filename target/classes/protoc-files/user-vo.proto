@@ -1,0 +1,11 @@
+syntax = "proto2";
+package user;
+
+option java_package = "org.auzmor.interview.proto";
+option java_outer_classname = "UserProto";
+
+message User {
+required uint32 id=1;
+required string fname=2;
+required string lname=3;
+}
